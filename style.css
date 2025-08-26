@@ -1,0 +1,7 @@
+
+body { margin:0; font-family:'Poppins', sans-serif; background:#f4f6f8; color:#333; }
+nav { display:flex; justify-content:space-between; padding:10px 20px; background:white; }
+header { text-align:center; padding:40px 20px; background:linear-gradient(135deg,#6a11cb,#2575fc); color:white; }
+.post { background:white; padding:20px; margin-bottom:20px; border-radius:12px; }
+.share-buttons a { color:#2575fc; margin-right:10px; font-size:1.2rem; }
+.dark-mode { background:#1e1e1e; color:#f4f6f8; }

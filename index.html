@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shabir Ahmad Bhat - Personal Blog</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Shabir Ahmad Bhat's personal blog on web development, tech tips, and personal stories.">
+  <meta name="keywords" content="Shabir Ahmad Bhat, personal blog, web development, tech, coding">
+  <meta name="author" content="Shabir Ahmad Bhat">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Shabir Ahmad Bhat Blog">
+  <meta property="og:description" content="Personal blog about web development and tech tips.">
+  <meta property="og:image" content="https://yourbloglink.com/images/profile.jpg">
+  <meta property="og:url" content="https://yourbloglink.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Analytics (replace G-XXXXXXXXXX with your ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <img src="images/profile.jpg" alt="Shabir Ahmad Bhat" class="profile-pic">
+      <h1 class="fade-in-text">Shabir Ahmad Bhat</h1>
+      <p class="fade-in-subtext">Welcome to my personal blog ✨ | Thoughts 💭 | Stories 📖 | Ideas 💡</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="container">
+    <h2>Welcome</h2>
+    <p>Hi, I’m Shabir Ahmad Bhat. This is my little corner of the internet where I share my thoughts, experiences, and ideas. 🌍✨</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hello! I’m Shabir Ahmad Bhat, passionate about writing, learning, and sharing knowledge. Through this blog, I aim to inspire, inform, and connect with people around the world. 🚀</p>
+  </section>
+
+  <!-- Topics Section -->
+  <section id="topics" class="container">
+    <h2>Topics</h2>
+    <div class="topics-grid">
+      <div class="topic-card" onclick="filterPosts('travel')">🌍 Travel</div>
+      <div class="topic-card" onclick="filterPosts('technology')">💻 Technology</div>
+      <div class="topic-card" onclick="filterPosts('lifestyle')">🌿 Lifestyle</div>
+      <div class="topic-card" onclick="filterPosts('inspiration')">✨ Inspiration</div>
+      <div class="topic-card" onclick="filterPosts('personal')">📝 Personal</div>
+      <div class="topic-card" onclick="filterPosts('all')">📌 Show All</div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="container">
+    <h2>Latest Posts</h2>
+    <div id="blog-posts">
+      <article class="post travel">
+        <h3>🌍 My Trip to Kashmir</h3>
+        <p>Exploring the beauty of Kashmir, from Dal Lake to Gulmarg hills. Truly heaven on earth!</p>
+        <a href="#">Read More</a>
+      </article>
+
+      <article class="post technology">
+        <h3>💻 The Future of AI</h3>
+        <p>Artificial Intelligence is changing the way we live and work. Here’s my take on where it’s going...</p>
+        <a href="#">Read More</a>
+      </article>
+
+      <article class="post lifestyle">
+        <h3>🌿 Healthy Living Tips</h3>
+        <p>Balancing life with good habits, mindfulness, and positive energy. Small changes, big results!</p>
+        <a href="#">Read More</a>
+      </article>
+
+      <article class="post inspiration">
+        <h3>✨ A Thought on Life</h3>
+        <p>Life is not about waiting for the storm to pass, but learning to dance in the rain. ☔</p>
+        <a href="#">Read More</a>
+      </article>
+
+      <article class="post personal">
+        <h3>📝 My First Blog Post</h3>
+        <p>Welcome to my blog! I’ll be posting about my journey, personal thoughts, and ideas that matter to me.</p>
+        <a href="#">Read More</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Shabir Ahmad Bhat | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
