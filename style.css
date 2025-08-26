@@ -1,7 +1,241 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body { margin:0; font-family:'Poppins', sans-serif; background:#f4f6f8; color:#333; }
-nav { display:flex; justify-content:space-between; padding:10px 20px; background:white; }
-header { text-align:center; padding:40px 20px; background:linear-gradient(135deg,#6a11cb,#2575fc); color:white; }
-.post { background:white; padding:20px; margin-bottom:20px; border-radius:12px; }
-.share-buttons a { color:#2575fc; margin-right:10px; font-size:1.2rem; }
-.dark-mode { background:#1e1e1e; color:#f4f6f8; }
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+
+  /* Fade-in animation */
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Text fade-in */
+.fade-in-text {
+  opacity: 0;
+  animation: fadeInText 1.5s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+.fade-in-subtext {
+  opacity: 0;
+  animation: fadeInText 1.5s ease-in-out forwards;
+  animation-delay: 2.2s;
+}
+
+/* Keyframes for text fade-in */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation */
+nav {
+  background: #34495e;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Sections */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Blog Articles */
+article {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+article h3 {
+  margin-bottom: 0.5rem;
+}
+
+article a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* Share Buttons inside posts */
+.share-buttons {
+  margin-top: 10px;
+}
+
+.share-buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  background: #2c3e50;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.share-buttons a:hover {
+  background: #f39c12;
+  transform: scale(1.1);
+}
+
+/* Topics Section */
+.topics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.topic-card {
+  background: #f39c12;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.topic-card:hover {
+  background: #d35400;
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #2c3e50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #f39c12;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Floating Share Bar */
+.floating-share {
+  position: fixed;
+  top: 40%;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.floating-share a {
+  background: #2c3e50;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.floating-share a:hover {
+  background: #f39c12;
+  transform: scale(1.1);
+}
